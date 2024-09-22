@@ -250,3 +250,111 @@ section{
     background-color: var(--main-color);
     border-radius: 50%;
 }
+
+.controls {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+
+.controls li {
+    list-style: none; 
+    text-align: center;
+    margin: 10px; 
+}
+
+.controls img {
+    width: 300px; 
+    height: 300px;
+    object-fit: cover;
+}
+
+
+.diet .controls .buttons{
+    padding: 3rem 2rem;
+    background: var(--white);
+    cursor: pointer;
+    margin-bottom: 3rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+    text-align: center;
+    border-radius: 1rem;
+}
+
+
+.diet .controls .buttons h3{
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    color: var(--light-black);
+}
+
+.diet .controls .buttons.active{
+    background: var(--primary);
+
+}
+
+.diet .image-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+
+.diet .image-container .box{
+    background: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.diet .image-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.diet .image-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.diet .image-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.diet .image-container .box .content{
+    padding: 2rem;
+
+}
+
+.diet .image-container .box .content .link{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.diet .image-container .box .content p{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+}
+
+.diet .image-container .box .content .icon{
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.diet .image-container .box .content .icon a{
+    font-size: 1.4rem;
+    color: var(--light-black);
+}
+
+.diet .image-container .box .content .icon a:hover{
+    color: var(--main-color);
+}
+
+.diet .image-container .box .content .icon a i{
+    padding-right: .5rem;
+    color: var(--main-color);
+}
