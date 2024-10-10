@@ -23,7 +23,7 @@ $('#vegan').click((e) => {
     $('#filterResult').empty();
     filterCategory("Vegan");
     $('#result').empty();
-    $('#result').append('<h1 class="heading" id="result">Vegan Friendly Dishes</h1>')
+    $('#result').append('<h1 class="heading" id="result">Vegan Meal & Desert</h1>')
     const resultElement=document.getElementById('result');
     resultElement.scrollIntoView({behavior:'smooth'});
 });
@@ -33,7 +33,7 @@ $('#breakfast').click((e) => {
     $('#filterResult').empty();
     filterCategory("Breakfast");
     $('#result').empty();
-    $('#result').append('<h1 class="heading" id="result">Vegan Friendly Dishes</h1>')
+    $('#result').append('<h1 class="heading" id="result">Breakfast</h1>')
     const resultElement=document.getElementById('result');
     resultElement.scrollIntoView({behavior:'smooth'});
 });
