@@ -53,20 +53,23 @@ section{
     font-size: 4rem;
 }
 
-.btn{
+.btn {
     display: inline-block;
     margin-top: 1rem;
     padding: 1rem 3rem;
-    border: .1rem solid var(--black);
+    border: .1rem solid var(--main-color); /* Change border color to match the main color */
     border-radius: .5rem;
     cursor: pointer;
     font-size: 1.7rem;
-    color: var(--black);
+    color: var(--white); /* Change text color to white for contrast */
+    background: var(--main-color); /* Add a background color */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
 
-.btn:hover{
-    background: var(--main-color);
-    color: var(--white);
+.btn:hover {
+    background: var(--white); /* Invert background color on hover */
+    color: var(--main-color); /* Invert text color on hover */
+    border: .1rem solid var(--main-color); /* Ensure border is visible on hover */
 }
 
 .header{
@@ -106,23 +109,25 @@ section{
     display: none;
 }
 
-.home{
-    min-height: 67.5rem;
+.home {
+    min-height: 100vh; 
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(image/home.jpg) no-repeat;
+    background: url(image/home.jpg) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
 }
+
 
 .home .content{
     max-width: 60rem;
     text-align: center;
 }
 
-.home .content h3{
-    font-size: 5rem;
+.home .content h3 {
+    font-size: 4.5rem; 
+    line-height: 1.2;
     text-transform: uppercase;
     color: var(--white);
     padding-bottom: 3.5rem;
@@ -196,18 +201,18 @@ section{
     border-radius: 50%;
     margin: -11rem auto 2rem;
     border: 1.8rem solid var(--bg);
-    overflow: hidden; /* Add this to hide any overflow */
-    display: flex; /* Center the image */
-    align-items: center; /* Center the image */
-    justify-content: center; /* Center the image */
+    overflow: hidden;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
 }
 
 
 .services .box-container .box .icon img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the container without distortion */
-    border-radius: 50%; /* Keeps the image in a circular shape */
+    object-fit: cover; 
+    border-radius: 50%; 
 }
 
 
@@ -225,31 +230,36 @@ section{
     border-radius: 5rem;
 }
 
-.services .box-container .box .content p{
+.services .box-container .box .content p {
     font-size: 1.4rem;
     color: var(--black);
     line-height: 2;
+    text-align: justify; 
 }
 
-.services .box-container .box .content ul{
+
+.services .box-container .box .content ul {
     margin: 2rem 0;
     list-style: none;
+    padding-left: 0; 
 }
 
-.services .box-container .box .content ul li{
-    padding: .5rem;
+.services .box-container .box .content ul li {
+    padding: 0.5rem 0; 
     font-size: 1.4rem;
     color: var(--black);
+    display: flex; 
+    align-items: center; 
 }
 
-.services .box-container .box .content ul li i{
+.services .box-container .box .content ul li i {
     font-size: 1.4rem;
-    columns: var(--white);
-    padding: .5rem;
-    margin-right: 1rem;
+    margin-right: 1rem; 
     background-color: var(--main-color);
     border-radius: 50%;
+    padding: 0.5rem; 
 }
+
 
 .controls {
     display: flex;
