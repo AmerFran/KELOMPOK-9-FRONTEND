@@ -57,19 +57,19 @@ section{
     display: inline-block;
     margin-top: 1rem;
     padding: 1rem 3rem;
-    border: .1rem solid var(--main-color); /* Change border color to match the main color */
+    border: .1rem solid var(--main-color);
     border-radius: .5rem;
     cursor: pointer;
     font-size: 1.7rem;
-    color: var(--white); /* Change text color to white for contrast */
-    background: var(--main-color); /* Add a background color */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    color: var(--white); 
+    background: var(--main-color); 
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); 
 }
 
 .btn:hover {
-    background: var(--white); /* Invert background color on hover */
-    color: var(--main-color); /* Invert text color on hover */
-    border: .1rem solid var(--main-color); /* Ensure border is visible on hover */
+    background: var(--white); 
+    color: var(--main-color); 
+    border: .1rem solid var(--main-color); 
 }
 
 .header{
@@ -167,6 +167,10 @@ section{
 
 .services{
     background: var(--bg);
+}
+
+.services .heading{
+    margin-bottom: 15rem;
 }
 
 .services .box-container{
@@ -279,6 +283,13 @@ section{
     object-fit: cover;
 }
 
+.diet {
+    margin-top: 15rem;
+}
+
+.diet .heading {
+    margin-bottom: 4rem;
+}
 
 .diet .controls .buttons{
     padding: 3rem 2rem;
