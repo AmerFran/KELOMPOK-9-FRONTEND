@@ -1,5 +1,5 @@
 $('#seafood').click((e) => {
-    e.preventDefault;
+    e.preventDefault();
     $('#filterResult').empty();
     filterCategory("seafood");
     $('#result').empty();
@@ -9,7 +9,7 @@ $('#seafood').click((e) => {
 });
 
 $('#sideDish').click((e) => {
-    e.preventDefault;
+    e.preventDefault();
     $('#filterResult').empty();
     filterCategory("Side");
     $('#result').empty();
@@ -19,7 +19,7 @@ $('#sideDish').click((e) => {
 });
 
 $('#vegan').click((e) => {
-    e.preventDefault;
+    e.preventDefault();
     $('#filterResult').empty();
     filterCategory("Vegan");
     $('#result').empty();
@@ -29,7 +29,7 @@ $('#vegan').click((e) => {
 });
 
 $('#breakfast').click((e) => {
-    e.preventDefault;
+    e.preventDefault();
     $('#filterResult').empty();
     filterCategory("Breakfast");
     $('#result').empty();
@@ -111,7 +111,7 @@ document.getElementById('searchString').addEventListener('keypress', function(e)
 });
 
 $('#searchButton').click((e) => {
-    e.preventDefault;
+    e.preventDefault();
     searchEvent(e);
 });
 
