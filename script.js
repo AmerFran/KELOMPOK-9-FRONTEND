@@ -106,16 +106,25 @@ function filterCategory(temp){
 
 document.getElementById('searchString').addEventListener('keypress', function(e) {
     if (e.key==='Enter'){
-        $('#result').empty();
-        $('#filterResult').empty();
-        e.preventDefault();
-        const resultElement=document.getElementById('result');
-        resultElement.scrollIntoView({behavior:'smooth'});
-        $('#result').append("result");
-        nameSearch($('#searchString').val());
-        
+        searchEvent(e); 
     }
 });
+
+$('#searchButton').click((e) => {
+    e.preventDefault;
+    searchEvent(e);
+});
+
+function searchEvent(e){
+    searchString=$('#searchString').val()
+    $('#result').empty();
+    $('#filterResult').empty();
+    e.preventDefault();
+    const resultElement=document.getElementById('result');
+    resultElement.scrollIntoView({behavior:'smooth'});
+    $('#result').append(`Search result for ${searchString}`);
+    nameSearch(searchString);
+}
 
 function descriptionFiller(temp){
     if(temp=="Side"){

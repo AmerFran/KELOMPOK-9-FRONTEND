@@ -32,14 +32,13 @@ function showIngredients(temp){
 function splitter(temp){
     res=temp.split(`\r\n`);
     lister(res);
-    console.log(res);
 }
 function lister(temp){
     let index=1;
     temp.forEach((temps)=>{
         if(temps!=''){
             $('#instructionContainer').append(`<li>${index}.${temps}</li>`);
-            index++
+            index++;
         }
     })
 }

@@ -109,7 +109,7 @@ li:last-child {
     }
 
     #descriptionContainer, #ingredientsContainer, #instructionContainer {
-        padding: 15px;
+        padding: 0px;
     }
 
     #descriptionContainer h2, #ingredientsContainer h2, #instructionContainer h2 {
